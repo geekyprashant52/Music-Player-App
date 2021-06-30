@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <div id="main-wrapper">
+                <div id="left-div">
+                    <audio id="audio-preview">
+                        <source src="" type="audio/mp3">
+                    </audio>
+                    <img src="" alt="" id="img-preview">
+                    <h3 id="song-name"></h3>
+                    <div id="seekbar-wrapper">
+                        <div id="seekbar"></div>
+                    </div>
+                    <div id="time-text-wrapper">
+                        <p id="initial-time">0</p>
+                        <p id="final-time"></p>
+                    </div>
+                    <div id="controls-wrapper">
+                        <div><i class="fas fa-random"></i></div>
+                        <div><i class="fas fa-chevron-circle-left"></i></div>
+                        <div id="btn-play-pause"><i class="far fa-play-circle"></i></div>
+                        <div><i class="fas fa-chevron-circle-right"></i></div>
+                        <div><i class="fas fa-redo"></i></div>
+                    </div>
+                    <div id="seperator-line"></div>
+                </div>
+                <div id="right-div">
+                    <!-- <div class="music-item-wrapper">
+                        <div class="small-preview-wrapper">
+                            <img class="small-preview" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg"
+                                alt="">
+                        </div>
+                        <div class="track-name-wrapper">
+                            <h3 class="track-name">Without You</h3>
+                            <p class="artist-name">Avicii</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

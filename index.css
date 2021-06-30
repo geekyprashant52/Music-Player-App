@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#main-wrapper{
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+#left-div{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    background-color: aquamarine;
+}
+
+#img-preview{
+    height: 250px;
+    border-radius: 8px;
+}
+
+#seekbar-wrapper{
+    width: 85%;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#seekbar{
+    width: 0%;
+    height: 8px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+#time-text-wrapper{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#controls-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#controls-wrapper i{
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#seperator-line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#right-div{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.music-item-wrapper{
+    width: 100%;
+    display: flex;
+    border: 0.5px solid #000;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.music-item-wrapper:hover{
+    box-shadow: 0px 0px 12px rgb(115, 184, 248);
+}
+
+.music-item-wrapper-active{
+    border: 3px solid #000;
+}
+.small-preview-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.small-preview{
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.track-name-wrapper{
+    margin-left: 20px;
+}
+
+
+.track-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.artist-name{
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (min-width:768px){
+    #main-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 8%;
+    }
+
+    #left-div{
+        width: 40%;
+    }
+    #right-div{
+        width: 60%;
+        padding: 0 5%;
+    }
+
+    #seperator-line{
+        display: none;
+    }
+
+}
